@@ -1,0 +1,67 @@
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css');
+
+.navbar-nav.navbar-right:last-child {
+    margin-right: 0;
+}
+img[src*="#thumbnail"]{ display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;}
+
+
+article#items{
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+article#items img{
+    width: auto !important; /*Keep the aspect ratio of the image*/
+    height: 400px !important;
+}
+
+article#current{
+    border: 3px solid black    
+}
+
+article#current img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto !important; 
+    height: 475px !important; 
+
+}
+
+
+article#current h1,h4,h6{
+    text-align: center;
+}
+
+article#current h6{
+    font-size: 150%;
+}
+
+article#items img:hover{
+    transform: scale(1.25);
+    border: 2px dashed white;
+}
+
+table, td, th {  
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 15px;
+  }
+  
+  footer{background-color: blue;
+color: white;
+font-size: 25px;
+border: 1px dashed black;}
