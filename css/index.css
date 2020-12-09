@@ -66,7 +66,7 @@ color: white;
 font-size: 25px;
 border: 1px dashed black;}
 
-input[type=text],[type=email] {
+/* input[type=text],[type=email] {
 width: 100%;
 display: inline-block;
 border: 1px solid #ccc;
@@ -96,3 +96,31 @@ font-size: 125%;
 color:white;
 
 } 
+ */
+
+
+
+
+input{border-radius: 3px; font-size: 150%;}
+        
+        
+        form
+        {
+            width: 50%;
+            margin : 0 auto;
+            padding: 5%;
+        border: 3px solid black;
+        }
+         label{
+            display: inline-block;
+            float: left;
+            clear: left;
+            width: 250px;
+            text-align: center;
+        }
+         input {
+          display: inline-block;
+          float: left;
+          width: 20%;
+        }
+        
