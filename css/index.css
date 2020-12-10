@@ -106,7 +106,7 @@ input{border-radius: 3px; font-size: 150%;}
         
         form
         {
-            width: 50%;
+            width: 75%;
             margin : 0 auto;
             padding: 5%;
         border: 3px solid black;
@@ -124,3 +124,28 @@ input{border-radius: 3px; font-size: 150%;}
           width: 20%;
         }
         
+        /* input:focus {
+            background-color: rgb(100, 100, 100);
+          } */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.temp, .time {
+    width: 49%;
+    display: inline;
+border: 2px solid black;}
+
+.weight {
+    width: 100%;
+    display: inline;
+border: 2px solid black;}

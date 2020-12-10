@@ -5,20 +5,31 @@
 <body>
     <header></header>
     <nav></nav>
-    <article id="current" class="container"></article>
-    <article id="items" class="container"></article>
-
         <form id="convert" name="convert">
-            <fieldset>
+            <h3>Conversion Chart</h3>
+            <fieldset  id="temp" name="temp">
         
              <legend>Temperature:</legend>
              <label for=“Celsius”>Celsius:</label>
-             <input type="number" id="Celsius" name="Celsius" onkeydown="Fahrenheit.value=(this.value*9/5)+32" onkeyup="Fahrenheit.value=(this.value*9/5)+32" min="" max="">
+             <input type="number" id="Celsius" name="Celsius" onkeydown="Fahrenheit.value=(this.value*9/5)+32, Kelvin.value=parseInt(this.value)+273.15" onkeyup="Fahrenheit.value=(this.value*9/5)+32, Kelvin.value=parseInt(this.value)+273.15" min="" max="">
              <label for=“Fahrenheit”>Fahrenheit:</label>
-             <input type="number"  id="Fahrenheit" onkeydown="Celsius.value = (this.value-32)*5/9" onkeyup="Celsius.value = (this.value-32)*5/9" name="Fahrenheit" min="" max="">
+             <input type="number"  id="Fahrenheit" onkeydown="Celsius.value = (this.value-32)*5/9,Kelvin.value=(parseInt(this.value)-32)*5/9 + 273.15" onkeyup="Celsius.value = (this.value-32)*5/9,Kelvin.value=(parseInt(this.value)-32)*5/9 + 273.15" name="Fahrenheit" min="" max="">
+             <label for=“Kelvin”>Kelvin:</label>
+             <input type="number"  id="Kelvin" onkeydown="Celsius.value = (parseInt(this.value)-273.15),Fahrenheit.value=(parseInt(this.value)-273.15)*9/5 + 32" onkeyup="Celsius.value = (this.value-273.15),Fahrenheit.value=(this.value-273.15)*9/5 + 32" name="Kelvin" min="" max="">
             </fieldset>
         
-            <fieldset>
+            <fieldset id="time" name="time">
+                <legend>Time:</legend>
+                 <label for=“Seconds”>Seconds:</label>
+                 <input type="number"  id="Seconds" name="Seconds" onkeydown="Minutes.value=(this.value/60), Hours.value=(this.value/60)/60" onkeyup="Minutes.value=(this.value/60), Hours.value=(this.value/60)/60" min="" max="">
+                 <label for=“Minutes”>Minutes:</label>
+                 <input type="number"  id="Minutes" onkeydown="Seconds.value=(this.value*60), Hours.value=(this.value*60)*60" onkeyup="Seconds.value=(this.value*60), Hours.value=(this.value*60)*60" name="Minutes" min="" max="">
+                 <label for=“Hours”>Hours:</label>
+                 <input type="number" id="Hours" name="Hours" onkeydown="Seconds.value=(this.value/60)/60, Minutes.value=(this.value/60)" onkeyup="Seconds.value=(this.value/60)/60, Minutes.value=(this.value/60)" min="" max="">
+                </fieldset>
+
+
+            <fieldset id="weight" name="weight">
              <legend>Weight:</legend>
              <label for=“Oz”>Oz:</label>
              <input type="number"  id="Oz" onkeydown="Cups.value=(this.value/8),
@@ -166,17 +177,13 @@
         TBL.value=(this.value*256)" id="Gallon"  name="Gallon" min="" max="">
             </fieldset>
         
-        <fieldset>
-            <legend>Time:</legend>
-             <label for=“Seconds”>Seconds:</label>
-             <input type="number"  id="Seconds" name="Seconds" onkeydown="Minutes.value=(this.value/60), Hours.value=(this.value/60)/60" onkeyup="Minutes.value=(this.value/60), Hours.value=(this.value/60)/60" min="" max="">
-             <label for=“Minutes”>Minutes:</label>
-             <input type="number"  id="Minutes" onkeydown="Seconds.value=(this.value*60), Hours.value=(this.value*60)*60" onkeyup="Seconds.value=(this.value*60), Hours.value=(this.value*60)*60" name="Minutes" min="" max="">
-             <label for=“Hours”>Hours:</label>
-             <input type="number" id="Hours" name="Hours" onkeydown="Seconds.value=(this.value/60)/60, Minutes.value=(this.value/60)" onkeyup="Seconds.value=(this.value/60)/60, Minutes.value=(this.value/60)" min="" max="">
-            </fieldset>
+    
         
            </form>
+
+           <article id="current" class="container"></article>
+           <article id="items" class="container"></article>
+
     <article id="pages" class="container"></article>
     
     <div>
