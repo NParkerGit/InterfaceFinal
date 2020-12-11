@@ -98,7 +98,7 @@ class Footer extends Page {
     render() {
         const yToday = new Date().getFullYear();
         $("footer").html(
-            `&copy; ${yToday} ${sName}`
+            `&copy; FOODVERSION 2020`
         );
     }
 }
