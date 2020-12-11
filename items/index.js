@@ -5,6 +5,6 @@ export default [
     {"id": "item3", "title":"Chicken Salad", "fname":"./ChickenSalad.md", "specialImage":"./img/salad.jpg"},
     {"id": "item4", "title":"Grilled Cheese", "fname":"./GrilledCheese.md", "specialImage":"./img/grill.jpg"},
     {"id": "item5", "title":"Pizza", "fname":"./Pizza.md", "specialImage":"./img/pizza.png"},
-    {"id": "item6", "title":"Lasagna", "fname":"./Lasagna.md", "specialImage":"./img/lasagna.png"},
+    {"id": "item6", "title":"Lasagna", "fname":"./Lasagna.md", "specialImage":"./img/lasagna.jpeg"},
     {"id": "item7", "title":"Chicken Burgers", "fname":"./ChickenBurgers.md", "specialImage":"./img/chickenburger.jpg"}
 ];
