@@ -1,13 +1,175 @@
-About Me
-===
+<form id="convert" name="convert">
+        <h3>Conversion Chart</h3>
+        <fieldset  id="temp" name="temp">
+    
+         <legend>Temperature:</legend>
+         <label for=“Celsius”>Celsius:</label>
+         <input type="number" id="Celsius" name="Celsius" onkeydown="Fahrenheit.value=(this.value*9/5)+32, Kelvin.value=parseInt(this.value)+273.15" onkeyup="Fahrenheit.value=(this.value*9/5)+32, Kelvin.value=parseInt(this.value)+273.15" min="" max="">
+         <label for=“Fahrenheit”>Fahrenheit:</label>
+         <input type="number"  id="Fahrenheit" onkeydown="Celsius.value = (this.value-32)*5/9,Kelvin.value=(parseInt(this.value)-32)*5/9 + 273.15" onkeyup="Celsius.value = (this.value-32)*5/9,Kelvin.value=(parseInt(this.value)-32)*5/9 + 273.15" name="Fahrenheit" min="" max="">
+         <label for=“Kelvin”>Kelvin:</label>
+         <input type="number"  id="Kelvin" onkeydown="Celsius.value = (parseInt(this.value)-273.15),Fahrenheit.value=(parseInt(this.value)-273.15)*9/5 + 32" onkeyup="Celsius.value = (this.value-273.15),Fahrenheit.value=(this.value-273.15)*9/5 + 32" name="Kelvin" min="" max="">
+        </fieldset>
+    
+        <fieldset id="time" name="time">
+            <legend>Time:</legend>
+             <label for=“Seconds”>Seconds:</label>
+             <input type="number"  id="Seconds" name="Seconds" onkeydown="Minutes.value=(this.value/60), Hours.value=(this.value/60)/60" onkeyup="Minutes.value=(this.value/60), Hours.value=(this.value/60)/60" min="" max="">
+             <label for=“Minutes”>Minutes:</label>
+             <input type="number"  id="Minutes" onkeydown="Seconds.value=(this.value*60), Hours.value=(this.value*60)*60" onkeyup="Seconds.value=(this.value*60), Hours.value=(this.value*60)*60" name="Minutes" min="" max="">
+             <label for=“Hours”>Hours:</label>
+             <input type="number" id="Hours" name="Hours" onkeydown="Seconds.value=(this.value/60)/60, Minutes.value=(this.value/60)" onkeyup="Seconds.value=(this.value/60)/60, Minutes.value=(this.value/60)" min="" max="">
+            </fieldset>
 
-![image id="a"](img/sky.jpg#thumbnail)
 
-> IT Innovation and Design Student
+        <fieldset id="weight" name="weight">
+         <legend>Weight:</legend>
+         <label for=“Oz”>Oz:</label>
+         <input type="number"  id="Oz" onkeydown="Cups.value=(this.value/8),
+         Grams.value=(this.value*28.35),
+         ML.value=(this.value*29.57),
+         MG.value=(this.value*28349.52),
+         Litre.value=(this.value/33.814),
+         TSP.value=(this.value*6),
+         TBL.value=(this.value*2),
+         Gallon.value=(this.value/128)" onkeyup="Cups.value=(this.value/8),
+    Grams.value=(this.value*28.35),
+    ML.value=(this.value*29.57),
+    MG.value=(this.value*28349.52),
+    Litre.value=(this.value/33.814),
+    TSP.value=(this.value*6),
+    TBL.value=(this.value*2),
+    Gallon.value=(this.value/128)" name="Oz" min="" max="">
+         <label for=“Cups”>Cups:</label>
+         <input type="number" onkeydown="Oz.value=(this.value*8),
+    Grams.value=(null),
+    ML.value=(this.value*236.59),
+    MG.value=(null),
+    Litre.value=(this.value/4.227),
+    TSP.value=(this.value*48),
+    TBL.value=(this.value*16),
+    Gallon.value=(this.value/16)" onkeyup="Oz.value=(this.value*8),
+    Grams.value=(null),
+    ML.value=(this.value*236.59),
+    MG.value=(null),
+    Litre.value=(this.value/4.227),
+    TSP.value=(this.value*48),
+    TBL.value=(this.value*16),
+    Gallon.value=(this.value/16)" id="Cups"  name="Cups" min="" max="">
+         <label for=“Grams”>Grams:</label>
+         <input type="number" onkeydown="Oz.value=(this.value/28.35),
+    Cups.value=(null),
+    ML.value=(null),
+    MG.value=(this.value*1000),
+    Litre.value=(null),
+    TSP.value=(null),
+    TBL.value=(null),
+    Gallon.value=(null)" onkeyup="Oz.value=(this.value/28.35),
+    Cups.value=(null),
+    ML.value=(null),
+    MG.value=(this.value*1000),
+    Litre.value=(null),
+    TSP.value=(null),
+    TBL.value=(null),
+    Gallon.value=(null)"  id="Grams"  name="Grams" min="" max="">
+         <label for=“ML”>ML:</label>
+         <input type="number" onkeydown="Oz.value=(this.value/29.574),
+    Cups.value=(this.value/237),
+    Grams.value=(null),
+    MG.value=(null),
+    Litre.value=(this.value/1000),
+    TSP.value=(this.value/4.929),
+    TBL.value=(this.value/14.787),
+    Gallon.value=(this.value/3785)" onkeyup="Oz.value=(this.value/29.574),
+    Cups.value=(this.value/237),
+    Grams.value=(null),
+    MG.value=(null),
+    Litre.value=(this.value/1000),
+    TSP.value=(this.value/4.929),
+    TBL.value=(this.value/14.787),
+    Gallon.value=(this.value/3785)" id="ML"  name="ML" min="" max="">
+         <label for=“MG”>MG:</label>
+         <input type="number" onkeydown="Oz.value=(this.value/28350),
+    Cups.value=(null),
+    Grams.value=(this.value/1000),
+    ML.value=(null),
+    Litre.value=(null),
+    TSP.value=(null),
+    TBL.value=(null),
+    Gallon.value=(null)" onkeyup="Oz.value=(this.value/28350),
+    Cups.value=(null),
+    Grams.value=(this.value/1000),
+    ML.value=(null),
+    Litre.value=(null),
+    TSP.value=(null),
+    TBL.value=(null),
+    Gallon.value=(null)" id="MG"  name="MG" min="" max="">
+         <label for=“Litre”>Litre:</label>
+         <input type="number" onkeydown="Oz.value=(this.value*33.81),
+    Cups.value=(this.value*4.23),
+    Grams.value=(null),
+    ML.value=(this.value*1000),
+    MG.value=(null),
+    TSP.value=(this.value*202.88),
+    TBL.value=(this.value*67.63),
+    Gallon.value=(this.value/3.785)" onkeyup="Oz.value=(this.value*33.81),
+    Cups.value=(this.value*4.23),
+    Grams.value=(null),
+    ML.value=(this.value*1000),
+    MG.value=(null),
+    TSP.value=(this.value*202.88),
+    TBL.value=(this.value*67.63),
+    Gallon.value=(this.value/3.785)"  id="Litre"  name="Litre" min="" max="">
+         <label for=“TSP”>TSP:</label>
+         <input type="number" onkeydown="Oz.value=(this.value/6),
+    Cups.value=(this.value/48),
+    Grams.value=(null),
+    ML.value=(this.value*4.93),
+    MG.value=(null),
+    L.value=(this.value/203),
+    TBL.value=(this.value/3),
+    Gallon.value=(this.value/768)" onkeyup="Oz.value=(this.value/6),
+    Cups.value=(this.value/48),
+    Grams.value=(null),
+    ML.value=(this.value*4.93),
+    MG.value=(null),
+    L.value=(this.value/203),
+    TBL.value=(this.value/3),
+    Gallon.value=(this.value/768)" id="TSP"  name="TSP" min="" max="">
+         <label for=“TBL”>TBL:</label>
+         <input type="number" onkeydown="Oz.value=(this.value/2),
+    Cups.value=(this.value/16),
+    Grams.value=(null),
+    ML.value=(this.value*14.79),
+    MG.value=(null),
+    L.value=(this.value/67.628),
+    TSP.value=(this.value*3),
+    Gallon.value=(this.value/256)" onkeyup="Oz.value=(this.value/2),
+    Cups.value=(this.value/16),
+    Grams.value=(null),
+    ML.value=(this.value*14.79),
+    MG.value=(null),
+    L.value=(this.value/67.628),
+    TSP.value=(this.value*3),
+    Gallon.value=(this.value/256)"  id="TBL"  name="TBL" min="" max="">
+         <label for=“Gallon”>Gallon:</label>
+         <input type="number" onkeydown="Oz.value=(this.value*128),
+    Cups.value=(this.value*16),
+    Grams.value=(null),
+    ML.value=(this.value*3785.41),
+    MG.value=(null),
+    L.value=(this.value*3.79),
+    TSP.value=(this.value*768),
+    TBL.value=(this.value*256)" onkeyup="Oz.value=(this.value*128),
+    Cups.value=(this.value*16),
+    Grams.value=(null),
+    ML.value=(this.value*3785.41),
+    MG.value=(null),
+    L.value=(this.value*3.79),
+    TSP.value=(this.value*768),
+    TBL.value=(this.value*256)" id="Gallon"  name="Gallon" min="" max="">
+        </fieldset>
+    
 
-> Designer/Developer, Coder/Prototyper
-
-> #### Skills
->
-> - Languages: C#, HTMl, JS, JAVA, CSS, PHP, Python, JQuery, ASP.NET
-> - Programs: Visual Studio, Visual Studio Code, Adobe Creative Cloud, Microsoft Office, Webstorm, Visual Paradigm, JustInMind, MySQL Workbench, Microsoft Server Mangement Studio, Netbeans, Blender, Tableau
+    
+       </form>
