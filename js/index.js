@@ -105,13 +105,13 @@ class Footer extends Page {
 
 class Nav extends Page {
     render() {
-        let sMenu = "";
-        for (let n = 0; n < aPages.length; n++) {
-            const sMenuItem = aPages[n].title;
-            if (sMenuItem != "index") {
-                sMenu += `<li><a href="#${sMenuItem}">${sMenuItem}</a></li>`;
-            }
-        }
+        // let sMenu = "";
+        // for (let n = 0; n < aPages.length; n++) {
+        //     const sMenuItem = aPages[n].title;
+        //     if (sMenuItem != "index") {
+        //         sMenu += `<li><a href="#${sMenuItem}">${sMenuItem}</a></li>`;
+        //     }
+        // }
 
         $("nav").html(`
         <div class="navbar navbar-inverse navbar-static-top" role="navigation">
@@ -124,11 +124,7 @@ class Nav extends Page {
                 </button>
                 <a class="navbar-brand" href="#">FOODVERSION</a>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    ${sMenu}
-                </ul>
-            </div>
+           
 
         </div>
 

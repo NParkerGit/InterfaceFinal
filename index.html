@@ -7,8 +7,6 @@
     <nav></nav>
            <article id="current" class="container"></article>
            <article id="items" class="container"></article>
-           <blockquote>Images from Delish</blockquote>
-
     <!-- <article id="pages" class="container"></article> -->
     <form id="convert" name="convert">
         <h3>Conversion Chart</h3>
@@ -185,17 +183,19 @@
 
     
        </form>
-       
-    <div>
-        <h3>Subscribe For Email Updates!</h3>
+       <br><br>
+    <div name="subscription" id="subscription">
         <form id="myForm" action="thanks.html">
-            <label for="name">Name:</label>
-            <br>
-            <input required placeholder="John Doe" id="name" type="text">
+            <h3>Subscribe for Updates</h3>
             <br><br>
+
+            <label for="name">Name:</label>
+            <input required placeholder="John Doe" id="name" type="text">
+            <br><br>            <br><br>
+
             <label for="emailAddress">Email Address:</label>
-            <br>
             <input required placeholder="johndoe@gmail.com" id="emailAddress" type="email">
+            <br><br>
             <br><br>
             <input type="submit" value="Subscribe">
         </form>
