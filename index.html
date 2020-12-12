@@ -18,7 +18,7 @@
          <label for=“Kelvin”>Kelvin:</label>
          <input type="number"  id="Kelvin" onkeydown="Celsius.value = ((parseInt(this.value)-273.15)).toFixed(2),Fahrenheit.value=((parseInt(this.value)-273.15)*9/5 + 32).toFixed(2)" onkeyup="Celsius.value = ((this.value-273.15)).toFixed(2),Fahrenheit.value=((this.value-273.15)*9/5 + 32).toFixed(2)" name="Kelvin" min="" max="">
         </fieldset>
-    
+    <br>
         <fieldset id="time" name="time">
             <legend>Time:</legend>
              <label for=“Seconds”>Seconds:</label>
@@ -28,7 +28,7 @@
              <label for=“Hours”>Hours:</label>
              <input type="number" id="Hours" name="Hours" onkeydown="Seconds.value=((this.value*60)*60).toFixed(2), Minutes.value=((this.value*60)).toFixed(2)" onkeyup="Seconds.value=((this.value*60)*60).toFixed(2), Minutes.value=((this.value*60)).toFixed(2)" min="" max="">
             </fieldset>
-
+<br>
 
         <fieldset id="weight" name="weight">
          <legend>Weight:</legend>
@@ -190,11 +190,11 @@
             <h4>New Recipes or Measurement Updates</h4>
             <br>
             <label for="name">Name:</label>
-            <input required placeholder="John Doe" id="name" type="text">
+            <input style="background-color: white;" required placeholder="John Doe" id="name" type="text">
             <br><br>            <br><br>
 
             <label for="emailAddress">Email Address:</label>
-            <input required placeholder="johndoe@gmail.com" id="emailAddress" type="email">
+            <input style="background-color: white;" required placeholder="johndoe@gmail.com" id="emailAddress" type="email">
             <br><br>
             <br><br>
             <input type="submit" value="Subscribe">
