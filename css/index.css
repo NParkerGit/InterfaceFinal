@@ -30,7 +30,6 @@ article#current img{
     margin-right: auto;
     width: auto !important; 
     height: 475px !important; 
-
 }
 
 
@@ -44,7 +43,7 @@ article#current h6{
 
 article#items img:hover{
     transform: scale(1.25);
-    border: 2px dashed white;
+    border: 2px solid black;
 }
 
 table, td, th {  
@@ -180,3 +179,10 @@ border: 2px solid black;}
     height: 5%;
 
 }
+
+input:focus {
+    background-color: yellow;
+  }
+  input:blur {
+    background-color: white;
+  }
