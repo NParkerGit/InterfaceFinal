@@ -25,9 +25,9 @@
              <label for=“Seconds”>Seconds:</label>
              <input type="number"  id="Seconds" name="Seconds" onkeydown="Minutes.value=(this.value/60), Hours.value=(this.value/60)/60" onkeyup="Minutes.value=(this.value/60), Hours.value=(this.value/60)/60" min="" max="">
              <label for=“Minutes”>Minutes:</label>
-             <input type="number"  id="Minutes" onkeydown="Seconds.value=(this.value*60), Hours.value=(this.value*60)*60" onkeyup="Seconds.value=(this.value*60), Hours.value=(this.value*60)*60" name="Minutes" min="" max="">
+             <input type="number"  id="Minutes" onkeydown="Seconds.value=(this.value*60), Hours.value=(this.value/60)" onkeyup="Seconds.value=(this.value*60), Hours.value=(this.value/60)" name="Minutes" min="" max="">
              <label for=“Hours”>Hours:</label>
-             <input type="number" id="Hours" name="Hours" onkeydown="Seconds.value=(this.value/60)/60, Minutes.value=(this.value/60)" onkeyup="Seconds.value=(this.value/60)/60, Minutes.value=(this.value/60)" min="" max="">
+             <input type="number" id="Hours" name="Hours" onkeydown="Seconds.value=(this.value*60)*60, Minutes.value=(this.value*60)" onkeyup="Seconds.value=(this.value*60)*60, Minutes.value=(this.value*60)" min="" max="">
             </fieldset>
 
 
