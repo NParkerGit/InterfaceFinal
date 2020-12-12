@@ -8,7 +8,6 @@ img[src*="#thumbnail"]{ display: block;
     margin-right: auto;
     width: 50%;}
 
-
 article#items{
     display: flex;
     overflow-x: auto;
@@ -21,6 +20,7 @@ article#items img{
 }
 
 article#current{
+    background-color: antiquewhite;
     border: 3px solid black    
 }
 
@@ -63,7 +63,7 @@ table, td, th {
   
   footer{
       background-color: rgb(34,35,35);
-      color: rgb(119,119,119);
+      color: rgb(255, 255, 255);
 font-size: 150%;
 border: 1px dashed black;}
 header{font-size: 150%;}
@@ -104,7 +104,9 @@ color:white;
 .social{
     border: 2px solid black;
 }
-
+#convert label{
+    color: black;
+}
 input{border-radius: 3px; font-size: 150%;}
         
         
@@ -192,3 +194,8 @@ input:focus {
   input:blur {
     background-color: white;
   }
+
+  body{
+/* background-color: antiquewhite; */
+background-image: url('img/food.jpg');
+}

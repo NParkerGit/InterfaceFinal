@@ -122,7 +122,7 @@ class Nav extends Page {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">FOODVERSION</a>
+                <a style="color:white;" class="navbar-brand" href="#">FOODVERSION</a>
             </div>
            
 
