@@ -20,7 +20,7 @@ article#items img{
 }
 
 article#current{
-    background-color: antiquewhite;
+    background-color: rgb(255, 255, 255);
     border: 3px solid black    
 }
 
