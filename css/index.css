@@ -193,6 +193,9 @@ border: 2px solid black;}
 input:focus {
     background-color: yellow;
   }
+  /* input:onkeyup,input:onkeydown {
+    background-color: yellow;
+  } */
   input:blur {
     background-color: white;
   }
