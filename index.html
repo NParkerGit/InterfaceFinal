@@ -15,11 +15,9 @@
     
          <legend>Temperature:</legend>
          <label for=“Celsius”>Celsius:</label>
-         <input type="number" id="Celsius" name="Celsius" onkeydown="Fahrenheit.value=((this.value*9/5)+32).toFixed(2), Kelvin.value=(parseInt(this.value)+273.15).toFixed(2)" onkeyup="Fahrenheit.value=((this.value*9/5)+32).toFixed(2), Kelvin.value=(parseInt(this.value)+273.15).toFixed(2)" min="" max="">
+         <input type="number" id="Celsius" name="Celsius" onkeydown="Fahrenheit.value=((this.value*9/5)+32).toFixed(2)" onkeyup="Fahrenheit.value=((this.value*9/5)+32).toFixed(2)" min="" max="">
          <label for=“Fahrenheit”>Fahrenheit:</label>
-         <input type="number"  id="Fahrenheit" onkeydown="Celsius.value = ((this.value-32)*5/9).toFixed(2),Kelvin.value=((parseInt(this.value)-32)*5/9 + 273.15).toFixed(2)" onkeyup="Celsius.value = ((this.value-32)*5/9).toFixed(2),Kelvin.value=((parseInt(this.value)-32)*5/9 + 273.15).toFixed(2)" name="Fahrenheit" min="" max="">
-         <label for=“Kelvin”>Kelvin:</label>
-         <input type="number"  id="Kelvin" onkeydown="Celsius.value = ((parseInt(this.value)-273.15)).toFixed(2),Fahrenheit.value=((parseInt(this.value)-273.15)*9/5 + 32).toFixed(2)" onkeyup="Celsius.value = ((this.value-273.15)).toFixed(2),Fahrenheit.value=((this.value-273.15)*9/5 + 32).toFixed(2)" name="Kelvin" min="" max="">
+         <input type="number"  id="Fahrenheit" onkeydown="Celsius.value = ((this.value-32)*5/9).toFixed(2)" onkeyup="Celsius.value = ((this.value-32)*5/9).toFixed(2)" name="Fahrenheit" min="" max="">
         </fieldset>
     <br>
         <fieldset id="time" name="time">
@@ -74,14 +72,14 @@
     Grams.value=(null),
     ML.value=(this.value*4.93),
     MG.value=(null),
-    L.value=(this.value/203),
+    Litre.value=(this.value/203),
     TBL.value=(this.value/3),
     Gallon.value=(this.value/768)" onkeyup="Oz.value=(this.value/6),
     Cups.value=(this.value/48),
     Grams.value=(null),
     ML.value=(this.value*4.93),
     MG.value=(null),
-    L.value=(this.value/203),
+    Litre.value=(this.value/203),
     TBL.value=(this.value/3),
     Gallon.value=(this.value/768)" id="TSP"  name="TSP" min="" max="">
          <label for=“TBL”>TBL:</label>
@@ -90,14 +88,14 @@
     Grams.value=(null),
     ML.value=(this.value*14.79),
     MG.value=(null),
-    L.value=(this.value/67.628),
+    Litre.value=(this.value/67.628),
     TSP.value=(this.value*3),
     Gallon.value=(this.value/256)" onkeyup="Oz.value=(this.value/2),
     Cups.value=(this.value/16),
     Grams.value=(null),
     ML.value=(this.value*14.79),
     MG.value=(null),
-    L.value=(this.value/67.628),
+    Litre.value=(this.value/67.628),
     TSP.value=(this.value*3),
     Gallon.value=(this.value/256)"  id="TBL"  name="TBL" min="" max="">
          <label for=“Gallon”>Gallon:</label>
@@ -106,14 +104,14 @@
     Grams.value=(null),
     ML.value=(this.value*3785.41),
     MG.value=(null),
-    L.value=(this.value*3.79),
+    Litre.value=(this.value*3.79),
     TSP.value=(this.value*768),
     TBL.value=(this.value*256)" onkeyup="Oz.value=(this.value*128),
     Cups.value=(this.value*16),
     Grams.value=(null),
     ML.value=(this.value*3785.41),
     MG.value=(null),
-    L.value=(this.value*3.79),
+    Litre.value=(this.value*3.79),
     TSP.value=(this.value*768),
     TBL.value=(this.value*256)" id="Gallon"  name="Gallon" min="" max="">
      <label for=“Grams”>Grams:</label>
